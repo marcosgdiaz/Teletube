@@ -1,0 +1,1 @@
+<embed id="vidplayer" src="http://localhost:60080/players/player.swf" poster= "media/thumbnails/miniatura.jpg" flashvars="allowfullscreen=true&allowscriptaccess=always&poster=media/thumbnails/miniatura.jpg&autostart=false&shownavigation=true&enablejs=true&volume=50&file=html5/<?php echo $vidrow['id_video']; ?>.mp4&streamer=rtmp://localhost:1935/vod" />

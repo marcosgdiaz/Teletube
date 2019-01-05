@@ -1,0 +1,236 @@
+.cabecera{ 
+    font-family:fantasy;
+    letter-spacing: 2px;
+    font-style:italic;
+    font-size: 50px;
+    text-align:center
+}
+
+#ividframe{ /*Necesaria para el iframe que contiene a videoframe */ 
+    display:block;
+    margin: 0 auto;
+    border:none;
+}
+
+
+
+
+/* INTENTO DE MANTENER EL FOOTER EN SU SITIO */
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#foot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.6rem;
+    background: rgba(117, 117, 117, 0.3);
+    letter-spacing: 2px;
+    font-style: oblique;
+    font-size: 14px;
+    line-height:1.8;
+}
+
+@media only screen and (max-width: 991px) { 
+    body{
+        overflow-x:hidden; 
+        position: relative;
+        margin: 0;
+        padding-bottom: 100px; 
+        min-height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) { 
+    body{
+        overflow-x:hidden; 
+        position: relative;
+        margin: 0;
+        padding-bottom: 70px; 
+        min-height: 100%;
+    }
+}
+
+
+
+/* MAQUETADO DE BUSCADOR DE USUARIOS */
+.usr_col{
+    font-size: 1.1em;
+}
+
+.lightgraybackg{
+    background-color: #f7f7f7 !important; /* Para sobreescribir bootstrap. Sucio.*/
+}
+
+
+
+/* MAQUETADO DE PERFIL */
+.proftab{ /* Para las pestañas del perfil de usuario */
+    max-width:45%;
+    width:500px;
+    font-size:20px;
+    text-align:center;
+    font-weight:500;
+}
+
+#userimg{
+    width:350px;
+    max-width:100%;
+}
+
+#miniatura{
+    width: 450px;
+    height: 220px;
+}
+
+#profile{
+    border-style:solid;
+    border-width:1px;
+    padding:5px;
+    background: radial-gradient(#ffffff, #dbe8ff, #ffffff);
+    border-radius:10px;
+    font-size:25px;
+    font-family:sans-serif; 
+}
+
+#profile_desc{
+    font-size:19px;
+}
+
+
+
+
+
+/* MAQUETADO DE PÁGINA DE AJUSTES */
+.imgsettings{
+    width: 100%;
+    max-width:300px;
+}
+
+.hiddenform{    /* Input para cambiar contraseña. Oculto por defecto */
+    display:none;
+}
+
+
+
+
+
+/* CLASES E IDs PARA EL MAQUETADO DE VÍDEOS Y RELACIONADOS */
+#vidcontainer{ /*Pensado para el div de los vídeos en index/perfil */
+    max-width:1500px;
+    margin:auto;
+
+}
+
+#ividframe{ /*Necesaria para el iframe que contiene a videoframe */
+    display:block;
+    margin: 0 auto;
+    border:none;
+    width:95%;
+}
+
+#vidframebody{ /* Necesaria para el body de ivideoframe.php */
+    margin-top:0   !important;  /* !important es sucio, lo borraré si puedo y me acuerdo */
+    overflow-x:hidden;
+
+}
+
+#vidmisc{
+    border: 1px solid #e5e5e5;
+    border-radius:8px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) { 
+    #vidplayer {
+        width: 95vw;
+        height: calc(95vw * 9/16); /*16:9 aspect ratio*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+@media only screen and (min-width: 601px){  /* Intento de Media Query para hacer página adaptativa a móviles*/
+    #vidplayer {
+        width: 57vw;
+        height: calc(57vw * 9/16); /*16:9 aspect ratio*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+#vidplaycontainer{
+    display:block;
+    margin: 0 auto;
+
+}
+
+
+
+
+/*  LOADER  */
+.loader {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top:0;
+    bottom: 0;	
+    left: 0;
+    right: 0;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 1);
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    z-index: 5;
+    display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cover{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,0.6);
+    z-index:5;
+    width:100%;
+    height:100%;
+    display: none;
+}
+
+.loadcontainer{
+    max-width: 300px;
+    width: 100%;
+    height: 45px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -25%;
+    z-index: 5;
+    text-align: center;
+    background-color: rgba(255,255,255,0);    	
+    display: none;
+}

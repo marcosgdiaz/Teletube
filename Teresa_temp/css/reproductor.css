@@ -1,0 +1,41 @@
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        
+        #test{
+            padding-top: 100px;
+        }
+        
+        
+       body{
+            background-color: white;            
+        }
+        
+        #grad1 {
+            height: 100px;
+            background: linear-gradient(grey, white);
+        }
+        
+        #outset {
+            border-width:5px;  
+            border-style: outset;
+            border-color: whitesmoke
+        }
+        #reproductor{
+           background-color: black;             
+        }
+        
+        .container{
+            margin-top: 20px;
+            
+        }
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }

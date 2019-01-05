@@ -1,0 +1,25 @@
+DATOS PÁGINA WOWZA
+usuario: trabajomulti7 trabajomulti7
+email: 11arce@hotmail.es (mi email basura)
+contraseña: Multimedia1
+
+License Key: ET1E4-GkMZJ-TekMc-fA3zb-P7ZPM-QGzQk-8mryBXZWHfJQ
+Expira: 4 mayo
+
+
+
+DATOS WOWZA CONFIGURADO EN LINUX SERVER
+usuario: trabajomulti7
+contraseña: Multimedia1
+
+License Key: ET1E4-GkMZJ-TekMc-fA3zb-P7ZPM-QGzQk-8mryBXZWHfJQ
+Expira: 4 mayo
+
+
+
+
+INSTRUCCIONES
+-Se instala todo como en el guión de prácticas (salvo por usuario/contraseña y licencia)
+-Applications->vod->edit-> Se cambia Content Directory de Use default a Use the following: /var/www/html/media/
+
+( https://www.wowza.com/docs/how-to-set-up-video-on-demand-streaming ) (no aporta gran cosa)
